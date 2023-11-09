@@ -46,6 +46,7 @@ lr_fpr, lr_tpr, threshold1 = metrics.roc_curve(y_test, y_pred)
 lr_roc_auc = metrics.auc(lr_fpr, lr_tpr)
 print(Metrics)
 
+
 # plotting it in matlab
 plt. figure(figsize=(8, 6))
 plt.plot(lr_fpr, lr_tpr, label=f'Logistic Regression (AUC = {lr_roc_auc:.2f})')
