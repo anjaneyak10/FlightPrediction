@@ -47,7 +47,7 @@ lr_roc_auc = metrics.auc(lr_fpr, lr_tpr)
 print(Metrics)
 
 
-# plotting it in matlab
+# plotting it in matplotlib
 plt. figure(figsize=(8, 6))
 plt.plot(lr_fpr, lr_tpr, label=f'Logistic Regression (AUC = {lr_roc_auc:.2f})')
 plt.plot(dt_fpr, dt_tpr, label=f'Decision Tree (AUC = {dt_roc_auc:.2f})')
